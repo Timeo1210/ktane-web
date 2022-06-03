@@ -1,0 +1,4 @@
+indic:
+circle: x+25, y+36 r: 18
+texte: 20px Impact x+72 y+73
+

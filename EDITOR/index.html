@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>EDITOR KTANE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="all" id="all" hidden>
+            <div id="left_arrow" onclick="Left_Arrow()">
+                <img src="../img/other/left_arrow.png" alt="">
+            </div>
+
+
+            <div class="game" id="game">
+                <div id="front">
+
+                </div>
+                <div id="right" hidden>
+
+                </div>
+                <div id="back" hidden>
+
+                </div>
+                <div id="left" hidden>
+
+                </div>
+            </div>
+
+            <div id="right_arrow" onclick="Right_Arrow()">
+                <img src="../img/other/right_arrow.png" alt="">
+            </div>
+        </div>
+
+        <div class="tools">
+            <div class="Timer_tool timer" id="Timer_tool" onclick="aff_tool(0)"></div>
+            <div class="Fils_tool fils" id="Fils_tool" onclick="aff_tool(1)">
+                <canvas id="canvas_fils" width="200" height="200"></canvas>
+            </div>
+            <div class="Button_tool button" id="Button_tool" onclick="aff_tool(2)">
+                <canvas id="canvas_button" width="200" height="200"></canvas>
+            </div>
+            <div class="Symboles_tool symboles" id="Symboles_tool" onclick="aff_tool(3)">
+                <canvas id="canvas_symboles" width="200" height="200"></canvas>
+            </div>
+            <div class="Simon_tool simon" id="Simon_tool" onclick="aff_tool(4)">
+                
+            </div>
+
+            <div class="Timer_params params" id="Timer_params">
+                <input type="text" name="temps" value="" id="input_timer_params"> <label for="input_timer_params"> entrer le temps en ms</label>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

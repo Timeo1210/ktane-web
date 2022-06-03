@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>KTANE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <audio id="Explosion_Sound">
+            <source src="sound/explosion.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Clock_Sound">
+            <source src="sound/clock.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Cutting_Wire_Sound">
+            <source src="sound/cutting_wire.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Click">
+            <source src="sound/click.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Button_Click_On">
+            <source src="sound/button_click_on.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="Button_Click_Up">
+            <source src="sound/button_click_up.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="all">
+            <div id="left_arrow" hidden onclick="Left_Arrow()">
+                <img src="img/other/left_arrow.png" alt="">
+            </div>
+            <div class="win_div">
+                <h1 id="win_output"></h1>
+            </div>
+
+
+            <div class="game" id="game" hidden>
+                <div id="front" hidden>
+
+                </div>
+                <div id="right" hidden>
+                </div>
+                <div id="back" hidden>
+
+                </div>
+                <div id="left" hidden>
+
+                </div>
+                <!--
+                <div class="first_Line">
+                    <div class="module timer" id="Timer">
+                        <h1 id='timer_output'></h1>
+                    </div>
+                    <div class="module fils" id="Fils">
+                        <canvas id="canvas_fils" width="200" height="200"></canvas>
+                    </div>
+                    <div class="module button" id="Button">
+                        <canvas id="canvas_button" width="200" height="200"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <div class="module symboles">
+                        <canvas id="canvas_symboles" width="200" height="200"></canvas>
+                    </div>
+                    <div class="module simon">
+                        <canvas id="canvas_simon" width="200" height="200"></canvas>
+                    </div>
+                    <div class="module fils">
+                        <canvas id="canvas_fils2" width="200" height="200"></canvas>
+                    </div>
+                </div>
+            -->
+            </div>
+            <div class="button_center">
+                <button type="button" onclick="Initing_Game()" id="btn_Start" disabled>Commencer!</button>
+                <br>
+                <a href="?l=0">Level 0</a>
+                <a href="?l=1">Level 1</a>
+                <a href="?l=2">Level 2</a>
+                <br>
+                <a href="./Manuel-du-démineur_1.pdf">Manuel du démineur</a>
+            </div>
+            <div id="right_arrow" hidden onclick="Right_Arrow()">
+                <img src="img/other/right_arrow.png" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--
+        <input type="file" id="file_r" accept='text/plain' onchange="openFile(event)">
+        -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="class.js"></script>
+    </body>
+</html>

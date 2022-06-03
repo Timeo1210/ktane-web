@@ -1,0 +1,147 @@
+body {
+    text-align: center;
+}
+
+.all {
+    margin: auto;
+    text-align: center;
+}
+
+.game {
+    position: fixed;
+    margin-left: 125px;
+    /*height: 440px;*/
+    width: 660px;
+    text-align: center;
+    border: 8px black solid;
+    background-color: #BCBCBC;
+}
+
+.module {
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin: 10px;
+}
+
+.first_Line, .second_Line {
+    width: 100%; /* 660px */
+    height: 100%;  /* 220px */
+}
+
+.timer {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/timer/timer_error_0.png');
+}
+.timer h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+    color: red;
+
+    margin: 47% auto;
+}
+
+.fils {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/fils/fils_fil_0.png');
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/button/button_button_clear.png');
+}
+#button_h {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+
+    margin: -100px auto auto -50px;
+}
+
+.symboles {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/symboles/symbole_none.png');
+}
+
+.simon {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/simon/simon_editor.png');
+}
+
+.none {
+    background-image: url('../img/other/none_module.png');
+}
+
+#left_arrow, #right_arrow {
+    margin-top: 160px;
+    float: left;
+    position: fixed;
+}
+
+#right_arrow {
+    margin-left: 820px;
+}
+
+#left, #right {
+    background-image: url('../img/other/side_view.png');
+    height: 456px;
+    width: 240px;
+}
+
+
+.tools {
+    background-color: grey;
+    height: 240px;
+    width: 1120px;
+    position: fixed;
+    margin-top: 550px;
+    border: 10px solid black;
+}
+
+.Timer_tool {
+    position: fixed;
+
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.Fils_tool {
+    position: fixed;
+    margin-left: 240px;
+    margin-top: 20px;
+    float: left;
+}
+
+.Button_tool {
+    position: fixed;
+    margin-left: 460px;
+    margin-top: 20px;
+    float: left;
+}
+
+.Symboles_tool {
+    position: fixed;
+    margin-left: 680px;
+    margin-top: 20px;
+    float: left;
+}
+
+.Simon_tool {
+    position: fixed;
+    margin-left: 900px;
+    margin-top: 20px;
+    float: left;
+}
+
+.params {
+    position: fixed;
+    margin-top: 300px;
+    margin-left: 560px; /* 1120 / 2 */
+}

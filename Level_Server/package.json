@@ -1,0 +1,14 @@
+{
+  "name": "level_server",
+  "version": "1.0.0",
+  "description": "for the KTANE projects",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "Boulhol Timeo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
