@@ -9,8 +9,8 @@ var testclass = new TestClass;
 
 
 //var KTANE_server = 'http://localhost:8080/' //temp
-var KTANE_server = "https://ktane-serv.herokuapp.com/"
-
+//var KTANE_server = "https://ktane-serv.herokuapp.com/"
+var KTANE_server = window.location.origin + "/KTANE/data"
 
 var Sound = {
     Explosion: document.getElementById('Explosion_Sound'),
@@ -76,7 +76,8 @@ function Initing_System() {
     }
     //GET LEVEL
 
-    $.getJSON(KTANE_server + '?level=' + level.toString(), function(data) {
+    // $.getJSON(KTANE_server + '?level=' + level.toString(), function(data) {
+    $.getJSON(KTANE_server + '/level_' + level.toString() + ".json", function(data) {
         json_data = JSON.stringify(data, null, 2)
         json_to_bomb()
         document.getElementById("btn_Start").disabled = false
